@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Challenge Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Promise Challenge Game</h1>
+      <p>
+        Complete all the tasks below by following the instructions. Each task
+        uses a promise!
+      </p>
+
+      <div>
+        <p id="task1" class="task" style="visibility: hidden">
+          Task 1: Click to reveal the next task!
+        </p>
+        <p id="task2" class="task" style="visibility: hidden">
+          Task 2: Wait for 2 seconds and see what happens...
+        </p>
+        <p id="task3" class="task" style="visibility: hidden">
+          Task 3: After completing this, you'll win!
+        </p>
+      </div>
+
+      <button id="startButton">Start Game</button>
+      <p id="statusMessage"></p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

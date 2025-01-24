@@ -1,0 +1,80 @@
+body {
+  background: url('bg.jpg') no-repeat center center/cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  background: linear-gradient(90deg, rgba(53,42,15,1) 0%, rgba(67,52,52,1) 31%, rgba(68,50,50,1) 100%);
+  max-width: 400px;
+  border-radius: 0 70px 0 82px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: rgb(232, 232, 232);
+  font-size: 18px;
+}
+
+.input-container {
+  position: relative;
+  margin-top: 25px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: transparent;
+  color: #000;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.input-field:focus,
+.input-field:valid {
+  background-color: #ddd;
+}
+
+.input-label {
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.input-field:focus ~ .input-label,
+.input-field:valid ~ .input-label {
+  opacity: 1;
+}
+
+.generate-btn {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #333;
+  border: none;
+  color: rgb(161, 161, 161);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.generate-btn:hover {
+  box-shadow: inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  color: #d6d6d6;
+}
+
+.result {
+  font-size: 40px;
+  color: #fff;
+}

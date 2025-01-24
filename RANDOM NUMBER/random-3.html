@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="random-3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Select The Maximum And The Minimum</h1>
+      <div class="input-container mt-3">
+        <input
+          required
+          class="input-field"
+          id="max"
+          placeholder="MAX"
+          type="number"
+        />
+        <label class="input-label" for="max">Maximum</label>
+      </div>
+      <div class="input-container mt-4">
+        <input
+          required
+          class="input-field"
+          id="min"
+          placeholder="MIN"
+          type="number"
+        />
+        <label class="input-label" for="min">Minimum</label>
+      </div>
+      <button id="randomButton" class="generate-btn mt-4">
+        Generate Random Number
+      </button>
+      <h1 id="randomNumber" class="result mt-4"></h1>
+    </div>
+
+    <script src="random-3.js"></script>
+  </body>
+</html>

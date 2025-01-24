@@ -1,0 +1,133 @@
+<style>
+  #container {
+    width: 100vh;
+    margin: auto;
+  }
+  #cityNameAndDate {
+    width: 100%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+  }
+  #prayers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #first3,
+  #last3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    width: calc(33% - 20px);
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: 0.4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0000;
+    padding: 0.75rem;
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    -webkit-mask: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption {
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  figure .name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  figure:hover .name {
+    opacity: 1;
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+      -webkit-mask: none;
+      color: #fff;
+    }
+  }
+</style>
+<div id="container">
+  <div id="cityNameAndDate">
+    <h1 id="cityName" style="font-size: 40px; color: rgb(107, 96, 96)">
+      Famous Artists
+    </h1>
+    <h3
+      id="date"
+      style="font-size: 30px; margin-top: 0px; color: rgb(121, 120, 118)"
+    >
+      12-NOVEMBRE-2024
+    </h3>
+    <hr style="margin: 10px 40px 40px 30px" />
+  </div>
+  <div id="prayers">
+    <div id="first3">
+      <figure style="--c: #fff5">
+        <img src="4.png" alt="Artist 1" />
+        <div class="name">METRO X FUTURE</div>
+        <figcaption>FIREEEEE</figcaption>
+      </figure>
+      <figure style="--c: #fff5">
+        <img src="14.png" alt="Artist 2" />
+        <div class="name">GUNNA X LIL BABY</div>
+        <figcaption>SNAAAKE</figcaption>
+      </figure>
+      <figure style="--c: #fff5">
+        <img src="15.png" alt="Artist 3" />
+        <div class="name">NF</div>
+        <figcaption>WHEN I GROW UP</figcaption>
+      </figure>
+    </div>
+    <div id="last3">
+      <figure style="--c: #fff5">
+        <img src="16.png" alt="Artist 4" />
+        <div class="name">GUNNA</div>
+        <figcaption>GUNNAHHHHH</figcaption>
+      </figure>
+      <figure style="--c: #fff5">
+        <img src="21.png" alt="Artist 5" />
+        <div class="name">ASAP ROCKY</div>
+        <figcaption>THE PRETIEST MF</figcaption>
+      </figure>
+      <figure style="--c: #fff5">
+        <img src="17.png" alt="Artist 6" />
+        <div class="name">J COLE</div>
+        <figcaption>RECORDING</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>

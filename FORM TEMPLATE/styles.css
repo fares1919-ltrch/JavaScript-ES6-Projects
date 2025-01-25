@@ -1,0 +1,126 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container styling */
+  .container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Form title */
+  .form-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  /* Form elements */
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Social media section */
+  .social_media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social_media span {
+    color: #7f8c8d;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .social_media a {
+    color: #3498db;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social_media a:hover {
+    color: #2980b9;
+  }
+  
+  /* Signature section */
+  .signature {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  .signature strong {
+    color: #3498db;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

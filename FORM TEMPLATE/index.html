@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Club Form</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS for general styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google font for elegant typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo-modified.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contactForm">
+        <h6 class="form-title">Welcome to Our Event</h6>
+
+        <div class="field">
+          <div class="i1">
+            <label for="name">
+              <i class="far fa-user"></i>
+              <span>Your Name</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g Fares Latrach"
+              required
+            />
+          </div>
+          <div class="i2">
+            <label for="email">
+              <i class="far fa-envelope"></i>
+              <span>Your Email</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@gmail.com"
+              required
+            />
+          </div>
+          <div class="i3">
+            <label for="message">
+              <i class="far fa-edit"></i>
+              <span>Your Message</span>
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter any questions"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <div class="social_media">
+          <span>Get In Touch:</span>
+          <a
+            href="https://www.facebook.com/devops.isima"
+            target="_blank"
+            class="fab fa-facebook-f"
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/devops-isima/"
+            target="_blank"
+            class="fab fa-linkedin-in"
+          ></a>
+          <a
+            href="https://www.instagram.com/devops_isima/?hl=en"
+            target="_blank"
+            class="fab fa-instagram"
+          ></a>
+        </div>
+
+        <div class="signature">
+          <p>Developed by <strong>FARES LATRACH</strong></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
